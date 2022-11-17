@@ -1,21 +1,30 @@
 {
-  "name": "tax-id-validator",
-  "version": "1..0.0",
-  "description": "Tax ID / VAT number validator",
+  "name": "country-tin-validator",
+  "version": "1.0.0",
+  "description": "Tax ID format validator",
   "main": "lib/index.js",
   "types": "lib/models/index.d.ts",
   "scripts": {
     "build": "tsc",
     "lint": "tslint -p tsconfig.json",
     "prebuild": "shx rm -rf lib",
-    "postbuild": "shx cp -r src/xsd lib",
     "prepare": "npm run build",
     "prepublishOnly": "npm run lint",
     "preversion": "npm run lint",
     "version": "git add -A src",
     "postversion": "git push && git push --tags"
   },
-  "author": "John Makridis",
+  "author": {
+    "name": "John Makridis",
+    "url": "https://johnmakridis.github.io",
+    "github": "https://github.com/johnmakridis"
+  },
+  "homepage": "https://johnmakridis.github.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johnmakridis/country-tin-validator"
+  },
+  "license": "MIT",
   "keywords": [
     "Tax ID",
     "VAT",
