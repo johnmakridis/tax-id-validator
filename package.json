@@ -1,6 +1,6 @@
 {
   "name": "taxid-validator",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Tax ID format validator",
   "main": "lib/index.js",
   "types": "lib/models/index.d.ts",
