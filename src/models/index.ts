@@ -9,7 +9,7 @@ export interface Country {
         tax_id_description_country: string;
         example: string;
         regex: RegExp[]
-    }[]
+    }[];
 
 }
 
