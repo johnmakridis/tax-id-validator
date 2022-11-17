@@ -1,5 +1,5 @@
 {
-  "name": "taxid-validator",
+  "name": "@johnmakridis/tax-id-validator",
   "version": "1.1.0",
   "description": "Tax ID format validator",
   "main": "lib/index.js",
