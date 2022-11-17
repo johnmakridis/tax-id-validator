@@ -1,6 +1,6 @@
 {
   "name": "country-tin-validator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tax ID format validator",
   "main": "lib/index.js",
   "types": "lib/models/index.d.ts",
