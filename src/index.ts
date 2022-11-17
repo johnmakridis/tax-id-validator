@@ -3,9 +3,9 @@ import { Country, ValidationResponse } from './models';
 
 export class TaxIdNumberValidator {
 
-    public available_countries: Country[] = [];
-    public available_countries_names: string[] = [];
-    public available_countries_codes: string[] = [];
+    private available_countries: Country[] = [];
+    private available_countries_names: string[] = [];
+    private available_countries_codes: string[] = [];
 
     constructor() {
 
@@ -53,11 +53,27 @@ export class TaxIdNumberValidator {
 
 
 
-    private getAvailableCountries(): Country[] {
+    public getAllCountries(): Country[] {
+        return countries;
+    }
 
+
+
+    public getAvailableCountries(): Country[] {
         const availableCountries = countries.filter((country) => country.tax?.length > 0 && country.tax.some((tax) => tax.regex.length > 0));
         return availableCountries;
+    }
 
+
+
+    public getAvailableCountryNames(): string[] {
+        return this.available_countries_names;
+    }
+
+
+
+    public getAvailableCountryCodes(): string[] {
+        return this.available_countries_codes;
     }
 
 }
