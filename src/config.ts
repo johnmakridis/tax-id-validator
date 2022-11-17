@@ -85,7 +85,7 @@ export const countries: Country[] = [
         code: 'AT',
         tax: [
             {
-                vat_prefix: ['AT'],
+                vat_prefix: 'AT',
                 enum: 'eu_vat',
                 tax_id_description: 'European VAT number',
                 tax_id_description_country: 'Austria (European VAT number)',
@@ -129,7 +129,7 @@ export const countries: Country[] = [
         code: 'BE',
         tax: [
             {
-                vat_prefix: ['BE'],
+                vat_prefix: 'BE',
                 enum: 'eu_vat',
                 tax_id_description: 'European VAT number',
                 tax_id_description_country: 'Belgium (European VAT number)',
@@ -215,7 +215,7 @@ export const countries: Country[] = [
         code: 'BG',
         tax: [
             {
-                vat_prefix: ['BG'],
+                vat_prefix: 'BG',
                 enum: 'eu_vat',
                 tax_id_description: 'European VAT number',
                 tax_id_description_country: 'Bulgaria (European VAT number)',
@@ -355,7 +355,7 @@ export const countries: Country[] = [
         code: 'HR',
         tax: [
             {
-                vat_prefix: ['HR'],
+                vat_prefix: 'HR',
                 enum: 'eu_vat',
                 tax_id_description: 'European VAT number',
                 tax_id_description_country: 'Croatia (European VAT number)',
@@ -374,7 +374,7 @@ export const countries: Country[] = [
         code: 'CY',
         tax: [
             {
-                vat_prefix: ['CY'],
+                vat_prefix: 'CY',
                 enum: 'eu_vat',
                 tax_id_description: 'European VAT number',
                 tax_id_description_country: 'Cyprus (European VAT number)',
@@ -388,7 +388,7 @@ export const countries: Country[] = [
         code: 'CZ',
         tax: [
             {
-                vat_prefix: ['CZ'],
+                vat_prefix: 'CZ',
                 enum: 'eu_vat',
                 tax_id_description: 'European VAT number',
                 tax_id_description_country: 'Czech Republic (European VAT number)',
@@ -402,7 +402,7 @@ export const countries: Country[] = [
         code: 'DK',
         tax: [
             {
-                vat_prefix: ['DK'],
+                vat_prefix: 'DK',
                 enum: 'eu_vat',
                 tax_id_description: 'European VAT number',
                 tax_id_description_country: 'Denmark (European VAT number)',
@@ -456,7 +456,7 @@ export const countries: Country[] = [
         code: 'EE',
         tax: [
             {
-                vat_prefix: ['EE'],
+                vat_prefix: 'EE',
                 enum: 'eu_vat',
                 tax_id_description: 'European VAT number',
                 tax_id_description_country: 'Estonia (European VAT number)',
@@ -490,7 +490,7 @@ export const countries: Country[] = [
         code: 'FI',
         tax: [
             {
-                vat_prefix: ['FI'],
+                vat_prefix: 'FI',
                 enum: 'eu_vat',
                 tax_id_description: 'European VAT number',
                 tax_id_description_country: 'Finland (European VAT number)',
@@ -504,7 +504,7 @@ export const countries: Country[] = [
         code: 'FR',
         tax: [
             {
-                vat_prefix: ['FR'],
+                vat_prefix: 'FR',
                 enum: 'eu_vat',
                 tax_id_description: 'European VAT number',
                 tax_id_description_country: 'France (European VAT number)',
@@ -548,7 +548,7 @@ export const countries: Country[] = [
         code: 'DE',
         tax: [
             {
-                vat_prefix: ['DE'],
+                vat_prefix: 'DE',
                 enum: 'eu_vat',
                 tax_id_description: 'European VAT number',
                 tax_id_description_country: 'Germany (European VAT number)',
@@ -572,7 +572,7 @@ export const countries: Country[] = [
         code: 'GR',
         tax: [
             {
-                vat_prefix: ['EL', 'GR'],
+                vat_prefix: 'EL',
                 enum: 'eu_vat',
                 tax_id_description: 'European VAT number',
                 tax_id_description_country: 'Greece (European VAT number)',
@@ -665,7 +665,7 @@ export const countries: Country[] = [
         code: 'HU',
         tax: [
             {
-                vat_prefix: ['HU'],
+                vat_prefix: 'HU',
                 enum: 'eu_vat',
                 tax_id_description: 'European VAT number',
                 tax_id_description_country: 'Hungary (European VAT number)',
@@ -722,7 +722,7 @@ export const countries: Country[] = [
         code: 'IE',
         tax: [
             {
-                vat_prefix: ['IE'],
+                vat_prefix: 'IE',
                 enum: 'eu_vat',
                 tax_id_description: 'European VAT number',
                 tax_id_description_country: 'Ireland (European VAT number)',
@@ -746,7 +746,7 @@ export const countries: Country[] = [
         code: 'IT',
         tax: [
             {
-                vat_prefix: ['IT'],
+                vat_prefix: 'IT',
                 enum: 'eu_vat',
                 tax_id_description: 'European VAT number',
                 tax_id_description_country: 'Italy (European VAT number)',
@@ -838,7 +838,7 @@ export const countries: Country[] = [
         code: 'LV',
         tax: [
             {
-                vat_prefix: ['LV'],
+                vat_prefix: 'LV',
                 enum: 'eu_vat',
                 tax_id_description: 'European VAT number',
                 tax_id_description_country: 'Latvia (European VAT number)',
@@ -886,7 +886,7 @@ export const countries: Country[] = [
         code: 'LT',
         tax: [
             {
-                vat_prefix: ['LT'],
+                vat_prefix: 'LT',
                 enum: 'eu_vat',
                 tax_id_description: 'European VAT number',
                 tax_id_description_country: 'Lithuania (European VAT number)',
@@ -900,7 +900,7 @@ export const countries: Country[] = [
         code: 'LU',
         tax: [
             {
-                vat_prefix: ['LU'],
+                vat_prefix: 'LU',
                 enum: 'eu_vat',
                 tax_id_description: 'European VAT number',
                 tax_id_description_country: 'Luxembourg (European VAT number)',
@@ -969,7 +969,7 @@ export const countries: Country[] = [
         code: 'MT',
         tax: [
             {
-                vat_prefix: ['MT'],
+                vat_prefix: 'MT',
                 enum: 'eu_vat',
                 tax_id_description: 'European VAT number',
                 tax_id_description_country: 'Malta (European VAT number)',
@@ -1082,7 +1082,7 @@ export const countries: Country[] = [
         code: 'NL',
         tax: [
             {
-                vat_prefix: ['NL'],
+                vat_prefix: 'NL',
                 enum: 'eu_vat',
                 tax_id_description: 'European VAT number',
                 tax_id_description_country: 'Netherlands (European VAT number)',
@@ -1219,7 +1219,7 @@ export const countries: Country[] = [
         code: 'PL',
         tax: [
             {
-                vat_prefix: ['PL'],
+                vat_prefix: 'PL',
                 enum: 'eu_vat',
                 tax_id_description: 'European VAT number',
                 tax_id_description_country: 'Poland (European VAT number)',
@@ -1233,7 +1233,7 @@ export const countries: Country[] = [
         code: 'PT',
         tax: [
             {
-                vat_prefix: ['PT'],
+                vat_prefix: 'PT',
                 enum: 'eu_vat',
                 tax_id_description: 'European VAT number',
                 tax_id_description_country: 'Portugal (European VAT number)',
@@ -1262,7 +1262,7 @@ export const countries: Country[] = [
         code: 'RO',
         tax: [
             {
-                vat_prefix: ['RO'],
+                vat_prefix: 'RO',
                 enum: 'eu_vat',
                 tax_id_description: 'European VAT number',
                 tax_id_description_country: 'Romania (European VAT number)',
@@ -1391,7 +1391,7 @@ export const countries: Country[] = [
         code: 'SK',
         tax: [
             {
-                vat_prefix: ['SK'],
+                vat_prefix: 'SK',
                 enum: 'eu_vat',
                 tax_id_description: 'European VAT number',
                 tax_id_description_country: 'Slovakia (European VAT number)',
@@ -1405,7 +1405,7 @@ export const countries: Country[] = [
         code: 'SI',
         tax: [
             {
-                vat_prefix: ['SI'],
+                vat_prefix: 'SI',
                 enum: 'eu_vat',
                 tax_id_description: 'European VAT number',
                 tax_id_description_country: 'Slovenia (European VAT number)',
@@ -1448,7 +1448,7 @@ export const countries: Country[] = [
         code: 'ES',
         tax: [
             {
-                vat_prefix: ['ES'],
+                vat_prefix: 'ES',
                 enum: 'es_cif',
                 tax_id_description: 'Spanish CIF number',
                 tax_id_description_country: 'Spain (Spanish CIF number)',
@@ -1456,7 +1456,7 @@ export const countries: Country[] = [
                 regex: [/^([A-Z])[0-9]{8}$/]
             },
             {
-                vat_prefix: ['ES'],
+                vat_prefix: 'ES',
                 enum: 'eu_vat',
                 tax_id_description: 'European VAT number',
                 tax_id_description_country: 'Spain (European VAT number)',
@@ -1495,7 +1495,7 @@ export const countries: Country[] = [
         code: 'SE',
         tax: [
             {
-                vat_prefix: ['SE'],
+                vat_prefix: 'SE',
                 enum: 'eu_vat',
                 tax_id_description: 'European VAT number',
                 tax_id_description_country: 'Sweden (European VAT number)',
@@ -1640,7 +1640,7 @@ export const countries: Country[] = [
         code: 'GB',
         tax: [
             {
-                vat_prefix: ['GB'],
+                vat_prefix: 'GB',
                 enum: 'eu_vat',
                 tax_id_description: 'European VAT number',
                 tax_id_description_country: 'United Kingdom (European VAT number)',

@@ -1,5 +1,5 @@
 {
-  "name": "country-tin-validator",
+  "name": "taxid-validator",
   "version": "1.0.2",
   "description": "Tax ID format validator",
   "main": "lib/index.js",
@@ -28,9 +28,13 @@
     "Validation",
     "RegExp"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "axios": "^0.27.2",
+    "xml2js": "^0.4.23"
+  },
   "devDependencies": {
     "@types/node": "^14.14.27",
+    "@types/xml2js": "^0.4.11",
     "shx": "^0.3.3",
     "ts-loader": "^9.2.2",
     "ts-node": "^10.0.0",
