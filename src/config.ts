@@ -1402,6 +1402,14 @@ export const countries: Country[] = [
                 tax_id_description_country: 'Saudi Arabia (Saudi Arabia VAT)',
                 example: '123456789012345',
                 regex: [/^[0-9]{15}$/]
+            },
+            {
+                vat_prefix: null,
+                enum: 'sa_vat_1',
+                tax_id_description: 'Saudi Arabia VAT',
+                tax_id_description_country: 'Saudi Arabia (Saudi Arabia VAT)',
+                example: '398765432198765',
+                regex: [/^3\d{8}\d{1}\d{3}\d{2}$/]
             }
         ]
     },
