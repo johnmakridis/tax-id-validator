@@ -1775,9 +1775,18 @@ export const countries: Country[] = [
         tax: null
     },
     {
-        name: 'Viet Nam',
+        name: 'Vietnam',
         code: 'VN',
-        tax: null
+        tax: [
+            {
+                vat_prefix: null,
+                enum: 'vn_ein',
+                tax_id_description: 'Vietnam - Mã Sṍ Thuḗ (Personal Tax Code)',
+                tax_id_description_country: 'Vietnam (PTC)',
+                example: '1234567890',
+                regex: [/^\d{10}$/]
+            }
+        ]
     },
     {
         name: 'Virgin Islands, British',
