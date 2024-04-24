@@ -2,5 +2,5 @@ const TaxIdNumberValidator = require('./lib/index').TaxIdNumberValidator;
 
 const validator = new TaxIdNumberValidator();
 
-const result = validator.validate({ country_code: 'AF', tax_id: '23234567892' });
+const result = validator.validate({ country_code: 'CO', tax_id: '123456789-0' });
 console.log(result);
