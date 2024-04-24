@@ -312,7 +312,24 @@ export const countries: Country[] = [
     {
         name: 'China',
         code: 'CN',
-        tax: null
+        tax: [
+            {
+                vat_prefix: null,
+                enum: 'cn_ussc',
+                tax_id_description: 'Chinese Uniform Social Credit Code (USSC) [Business]',
+                tax_id_description_country: 'China (Chinese Uniform Social Credit Code (USSC))',
+                example: '12345678901234567X',
+                regex: [/^\d{17}[\dxX]$/]
+            },
+            {
+                vat_prefix: null,
+                enum: 'cn_tin',
+                tax_id_description: 'Chinese National ID number [Individuals]',
+                tax_id_description_country: 'China (National ID number [Individuals])',
+                example: '123456789012345678',
+                regex: [/^\d{17}[\dxX]$/]
+            }
+        ]
     },
     {
         name: 'Christmas Island',
