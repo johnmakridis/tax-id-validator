@@ -782,7 +782,16 @@ export const countries: Country[] = [
     {
         name: 'Israel',
         code: 'IL',
-        tax: null
+        tax: [
+            {
+                vat_prefix: null,
+                enum: 'il_vat',
+                tax_id_description: 'Israel VAT number',
+                tax_id_description_country: 'Israel (VAT number)',
+                example: '246801357',
+                regex: [/^\d{9}$/]
+            }
+        ]
     },
     {
         name: 'Italy',
