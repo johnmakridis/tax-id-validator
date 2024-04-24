@@ -1259,7 +1259,16 @@ export const countries: Country[] = [
     {
         name: 'Philippines',
         code: 'PH',
-        tax: null
+        tax: [
+            {
+                vat_prefix: null,
+                enum: 'ph_tin',
+                tax_id_description: 'Philippines TIN',
+                tax_id_description_country: 'Philippines (TIN)',
+                example: '246801627387',
+                regex: [/^\d{12}$/]
+            }
+        ]
     },
     {
         name: 'Pitcairn',
