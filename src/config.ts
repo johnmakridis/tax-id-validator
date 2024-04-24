@@ -54,7 +54,16 @@ export const countries: Country[] = [
     {
         name: 'Argentina',
         code: 'AR',
-        tax: null
+        tax: [
+            {
+                vat_prefix: null,
+                enum: 'ar_cuit',
+                tax_id_description: 'Argentinian Unique Tax Identification Code (AR CUIT)',
+                tax_id_description_country: 'Argentina (Argentinian Unique Tax Identification Code (AR CUIT))',
+                example: '23234567892',
+                regex: [/^(20|23|24|25|26|27)(\d{8})\d$/]
+            }
+        ]
     },
     {
         name: 'Armenia',
