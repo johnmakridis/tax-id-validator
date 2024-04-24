@@ -1663,7 +1663,24 @@ export const countries: Country[] = [
     {
         name: 'Turkey',
         code: 'TR',
-        tax: null
+        tax: [
+            {
+                vat_prefix: null,
+                enum: 'tr_vkn_b',
+                tax_id_description: 'Turkey Tax Identification Number - Vergi Kimlik Numarası [Business]',
+                tax_id_description_country: 'Turkey (VKN)',
+                example: '9123456789',
+                regex: [/^(0|1|9)\d{9}$/]
+            },
+            {
+                vat_prefix: null,
+                enum: 'tr_vkn_i',
+                tax_id_description: 'Turkey Tax Identification Number - Vergi Kimlik Numarası [Individual]',
+                tax_id_description_country: 'Turkey (VKN)',
+                example: '12345678901',
+                regex: [/^\d{11}$/]
+            }
+        ]
     },
     {
         name: 'Turkmenistan',
