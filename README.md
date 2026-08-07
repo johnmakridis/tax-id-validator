@@ -98,7 +98,7 @@ This library validates **structure only** — character set, length, literal pre
 
 ## Supported countries
 
-167 of the 245 ISO countries/territories are covered as of this release, spanning EU VAT numbers plus national VAT/GST/TIN/EIN-style identifiers (e.g. US EIN, UK VAT, India GST, Brazil CNPJ/CPF, Australia ABN, and many more). Countries without an independently documented tax ID format (e.g. uninhabited territories, or places without their own tax administration) are intentionally left unsupported rather than guessed. Run `getAllCountries()` / `getAvailableCountries()` to inspect the exact list and each entry's `tax_id_description` and `example` at runtime, or see [`src/config.ts`](./src/config.ts) for the full data set.
+167 of the 245 ISO countries/territories are covered as of this release, spanning EU VAT numbers plus national VAT/GST/TIN/EIN-style identifiers (e.g. US EIN, UK VAT, India GST, Brazil CNPJ/CPF, Australia ABN, and many more). Countries without an independently documented tax ID format (e.g. uninhabited territories, or places without their own tax administration) are intentionally left unsupported rather than guessed. See [**SUPPORTED_COUNTRIES**](./SUPPORTED_COUNTRIES.md) for the full list with each country's tax ID type and example, or call `getAllCountries()` / `getAvailableCountries()` to inspect it at runtime.
 
 Note on the UK and Northern Ireland: since Brexit (01/01/2021), the EU's VIES service no longer checks `GB` VAT numbers at all — `getVIESData()` will reject them. The UK (`GB`) entry here still validates *format* only. Northern Ireland issues its own `XI`-prefixed VAT numbers under the EU protocol, which VIES *does* still check live — it's listed as its own entry (code `XI`) since it isn't its own ISO country.
 
