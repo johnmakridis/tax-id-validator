@@ -1,16 +1,17 @@
 {
   "name": "tax-id-number-validator",
   "version": "1.1.0",
-  "description": "Tax ID format validator",
+  "description": "Validate the format of VAT, GST, TIN, EIN and other tax identification numbers for 166+ countries, with optional live EU VAT lookup via VIES",
   "main": "lib/index.js",
   "types": "lib/models/index.d.ts",
   "scripts": {
     "build": "tsc",
     "lint": "tslint -p tsconfig.json",
+    "test": "jest",
     "prebuild": "shx rm -rf lib",
     "prepare": "npm run build",
-    "prepublishOnly": "npm run lint",
-    "preversion": "npm run lint",
+    "prepublishOnly": "npm run lint && npm test",
+    "preversion": "npm run lint && npm test",
     "version": "git add -A src",
     "postversion": "git push && git push --tags"
   },
@@ -28,22 +29,30 @@
   "keywords": [
     "Tax ID",
     "VAT",
+    "GST",
+    "TIN",
+    "EIN",
+    "VIES",
     "Validator",
     "Validation",
-    "RegExp"
+    "RegExp",
+    "TypeScript"
   ],
   "dependencies": {
-    "axios": "^0.27.2",
-    "xml2js": "^0.4.23"
+    "axios": "^1.19.0",
+    "xml2js": "^0.6.2"
   },
   "devDependencies": {
-    "@types/node": "^14.14.27",
-    "@types/xml2js": "^0.4.11",
-    "shx": "^0.3.3",
-    "ts-loader": "^9.2.2",
-    "ts-node": "^10.0.0",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^22.0.0",
+    "@types/xml2js": "^0.4.14",
+    "jest": "^30.4.2",
+    "shx": "^0.4.0",
+    "ts-jest": "^29.4.12",
+    "ts-loader": "^9.6.2",
+    "ts-node": "^10.9.2",
     "tslint": "^6.1.3",
-    "typescript": "^4.3.2"
+    "typescript": "^6.0.3"
   },
   "files": [
     "lib/**/*"
