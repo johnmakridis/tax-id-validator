@@ -6,7 +6,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "types": "lib/models/index.d.ts",
+  "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc",
     "lint": "tslint -p tsconfig.json",
