@@ -1,20 +1,20 @@
-# tax-id-number-validator
+# @johnmakridis/tax-id-validator
 
-[![npm version](https://img.shields.io/npm/v/tax-id-number-validator.svg)](https://www.npmjs.com/package/tax-id-number-validator)
-[![license](https://img.shields.io/npm/l/tax-id-number-validator.svg)](./LICENSE)
+[![npm version](https://img.shields.io/npm/v/@johnmakridis/tax-id-validator.svg)](https://www.npmjs.com/package/@johnmakridis/tax-id-validator)
+[![license](https://img.shields.io/npm/l/@johnmakridis/tax-id-validator.svg)](./LICENSE)
 
 Validate the **format** of tax identification numbers (VAT, GST, TIN, EIN, and similar) for **167 of 245 ISO countries and territories** (plus Northern Ireland's post-Brexit `XI` VAT jurisdiction), written in TypeScript with zero-config regex-based validation. Optionally cross-check EU VAT numbers live against the European Commission's [VIES](https://ec.europa.eu/taxation_customs/vies/) service.
 
 ## Install
 
 ```bash
-npm install tax-id-number-validator
+npm install @johnmakridis/tax-id-validator
 ```
 
 ## Quick start
 
 ```ts
-import { TaxIdNumberValidator } from 'tax-id-number-validator';
+import { TaxIdNumberValidator } from '@johnmakridis/tax-id-validator';
 
 const validator = new TaxIdNumberValidator();
 
@@ -33,7 +33,7 @@ console.log(result);
 CommonJS works the same way:
 
 ```js
-const { TaxIdNumberValidator } = require('tax-id-number-validator');
+const { TaxIdNumberValidator } = require('@johnmakridis/tax-id-validator');
 ```
 
 ## API

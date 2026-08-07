@@ -13,7 +13,7 @@ There is no `test` npm script. To exercise a change manually, build then run `no
 
 ## Architecture
 
-This is a small TypeScript library (published as `tax-id-number-validator`) that validates tax ID / VAT number formats by country using regex, and optionally checks EU VAT numbers live against the VIES web service.
+This is a small TypeScript library (published as `@johnmakridis/tax-id-validator`) that validates tax ID / VAT number formats by country using regex, and optionally checks EU VAT numbers live against the VIES web service.
 
 - `src/config.ts` — a single large `countries: Country[]` array covering every ISO country. Most entries have `tax: null` (unsupported). Supported countries have one or more entries in `tax[]`, each with an `enum` id, a `regex` array (currently always exactly one regex), an `example`, and an optional `vat_prefix` (used for EU VAT numbers, e.g. `'DE'`, `'FR'`). Adding support for a new country/tax type means adding/editing an entry here — this is almost always the only file that needs to change for that kind of task.
 - `src/models/index.ts` — shared TypeScript interfaces (`Country`, `ValidationResponse`, `VIESRequestBody`, `VIESResponse`).

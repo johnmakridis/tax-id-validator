@@ -1,8 +1,11 @@
 {
-  "name": "tax-id-number-validator",
+  "name": "@johnmakridis/tax-id-validator",
   "version": "1.1.0",
-  "description": "Validate the format of VAT, GST, TIN, EIN and other tax identification numbers for 166+ countries, with optional live EU VAT lookup via VIES",
+  "description": "Validate the format of VAT, GST, TIN, EIN and other tax identification numbers for 167+ countries, with optional live EU VAT lookup via VIES",
   "main": "lib/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "types": "lib/models/index.d.ts",
   "scripts": {
     "build": "tsc",
@@ -22,7 +25,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/johnmakridis/tax-id-number-validator"
+    "url": "https://github.com/johnmakridis/tax-id-validator"
   },
   "homepage": "https://johnmakridis.github.io",
   "license": "MIT",
