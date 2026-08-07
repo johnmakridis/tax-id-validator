@@ -34,28 +34,27 @@ export class TaxIdNumberValidator {
         if (!country?.code)
             throw new Error(`Country ${params.country_code.toUpperCase()} is not supported`);
 
-        if (country.tax.some((t) => t.vat_prefix && !params.tax_id.toUpperCase().startsWith(t.vat_prefix)))
+        // Only enforce the (helpful, early) prefix check when every registered tax type for this
+        // country requires one — some countries (e.g. Spain) mix a prefixed EU VAT number with an
+        // unprefixed local tax id, and a blanket veto there would reject valid unprefixed numbers.
+        const allTaxTypesRequirePrefix = country.tax.every((t) => t.vat_prefix);
+
+        if (allTaxTypesRequirePrefix && country.tax.some((t) => t.vat_prefix && !params.tax_id.toUpperCase().startsWith(t.vat_prefix)))
             throw new Error(`Invalid VAT number prefix for country '${params.country_code.toUpperCase()}'`);
 
 
-        const isValid = country.tax
-            .map((t) => t.regex)
-            .map((r) => (r[0]).test(params.tax_id))
-            .filter((result) => result === true)
-            .length > 0 ? true : false;
+        const matchedTax = country.tax.find((t) =>
+            (!t.vat_prefix || params.tax_id.toUpperCase().startsWith(t.vat_prefix)) && t.regex[0].test(params.tax_id)
+        );
 
 
         const data: ValidationResponse = {
             country_name: country.name,
             country_code: country.code,
-            tax_prefix: null,
+            tax_prefix: matchedTax?.vat_prefix || null,
             tax_id: params.tax_id,
-            is_valid_format: isValid,
+            is_valid_format: !!matchedTax,
         };
-
-
-        if (isValid)
-            data.tax_prefix = country.tax.map((t) => t.vat_prefix)?.[0] || null;
 
 
         return data;
