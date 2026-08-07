@@ -2,6 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/@johnmakridis/tax-id-validator.svg)](https://www.npmjs.com/package/@johnmakridis/tax-id-validator)
 [![license](https://img.shields.io/npm/l/@johnmakridis/tax-id-validator.svg)](./LICENSE)
+[![CI](https://github.com/johnmakridis/tax-id-validator/actions/workflows/ci.yml/badge.svg)](https://github.com/johnmakridis/tax-id-validator/actions/workflows/ci.yml)
 
 Validate the **format** of tax identification numbers (VAT, GST, TIN, EIN, and similar) for **167 of 245 ISO countries and territories** (plus Northern Ireland's post-Brexit `XI` VAT jurisdiction), written in TypeScript with zero-config regex-based validation. Optionally cross-check EU VAT numbers live against the European Commission's [VIES](https://ec.europa.eu/taxation_customs/vies/) service.
 
