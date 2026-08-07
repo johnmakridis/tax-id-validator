@@ -1,6 +1,6 @@
 {
   "name": "@johnmakridis/tax-id-validator",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Validate the format of VAT, GST, TIN, EIN and other tax identification numbers for 167+ countries, with optional live EU VAT lookup via VIES",
   "main": "lib/index.js",
   "publishConfig": {
